@@ -82,7 +82,7 @@ management:
 
 eureka:
     instance:
-        appname: jhipster-registry
+        appname: ercon-registry
         instanceId: jhipsterRegistry:${spring.application.instance-id:${random.value}}
         prefer-ip-address: true
         lease-renewal-interval-in-seconds: 5
@@ -100,7 +100,7 @@ eureka:
         instance-info-replication-interval-seconds: 10
         registry-fetch-interval-seconds: 10
         service-url:
-            defaultZone: http://admin:${spring.security.user.password:admin}@localhost:${server.port}/eureka/
+            defaultZone: http://admin:admin@localhost:${server.port}/eureka/
     server:
         # see discussion about enable-self-preservation:
         # https://github.com/jhipster/generator-jhipster/issues/3654
@@ -114,6 +114,6 @@ eureka:
 jhipster:
     swagger:
         default-include-pattern: /(api|config)/.*
-        title: JHipster Registry API
-        description: JHipster Registry API documentation
+        title: Ercon Registry API
+        description: Ercon API documentation
         version: ${info.project.version}
